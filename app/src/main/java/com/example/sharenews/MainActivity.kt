@@ -36,7 +36,7 @@ private lateinit var mAdapter: Newsadapter // to make a member function we add '
     }
 
 private fun fetchdata(){
-val url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
+val url = "https://saurav.tech/NewsAPI/top-headlines/category/business/in.json"
   val jsonObjectRequest=JsonObjectRequest(com.android.volley.Request.Method.GET
 ,url,null, Response.Listener {
                              val newsJSONArray=it.getJSONArray("articles")
